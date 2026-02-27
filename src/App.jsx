@@ -21,6 +21,9 @@ import StateExample from './useState/StateExample'
 import Form from './useState/Form'
 import Radio from './useState/Radio'
 import Dropdown from './useState/Dropdown'
+import RoutingExample from './Routing/RoutingExample'
+import ButtonClick from './Routing/useNavigate/ButtonClick'
+import LazyLoading from './LazyLoading'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -54,8 +57,11 @@ function App() {
 
       {/* <Form/> */}
       {/* <Radio/> */}
-      <Dropdown/>
+      {/* <Dropdown/> */}
 
+        <RoutingExample/>
+        {/* <ButtonClick/> */}
+        {/* <LazyLoading/> */}
     </>
   )
 }
