@@ -24,6 +24,8 @@ import Dropdown from './useState/Dropdown'
 import RoutingExample from './Routing/RoutingExample'
 import ButtonClick from './Routing/useNavigate/ButtonClick'
 import LazyLoading from './LazyLoading'
+import FormDataReducer from './useReducer/FormDataReducer'
+import UIforCounterReducer from './useReducer/UIforCounterReducer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -59,9 +61,15 @@ function App() {
       {/* <Radio/> */}
       {/* <Dropdown/> */}
 
-        <RoutingExample/>
+        {/* <RoutingExample/> */}
         {/* <ButtonClick/> */}
         {/* <LazyLoading/> */}
+
+        {/* useReducer */}
+        {/* <FormDataReducer/> */}
+
+        <UIforCounterReducer/>
+
     </>
   )
 }
