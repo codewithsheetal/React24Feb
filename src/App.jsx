@@ -26,6 +26,10 @@ import ButtonClick from './Routing/useNavigate/ButtonClick'
 import LazyLoading from './LazyLoading'
 import FormDataReducer from './useReducer/FormDataReducer'
 import UIforCounterReducer from './useReducer/UIforCounterReducer'
+import SimpleExample from './useEffect/SimpleExample'
+import ParentEffect from './useEffect/Parentchildeffect/ParentEffect'
+import MountUnmount from './useEffect/ReactLifeCycle/MountUnmount'
+import InterviewQue from './useEffect/InterviewQue'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -68,8 +72,12 @@ function App() {
         {/* useReducer */}
         {/* <FormDataReducer/> */}
 
-        <UIforCounterReducer/>
+        {/* <UIforCounterReducer/> */}
 
+        {/* <SimpleExample/> */}
+        {/* <ParentEffect/> */}
+        {/* <MountUnmount/> */}
+        <InterviewQue/>
     </>
   )
 }
