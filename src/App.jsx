@@ -30,6 +30,13 @@ import SimpleExample from './useEffect/SimpleExample'
 import ParentEffect from './useEffect/Parentchildeffect/ParentEffect'
 import MountUnmount from './useEffect/ReactLifeCycle/MountUnmount'
 import InterviewQue from './useEffect/InterviewQue'
+import SimpleUseRef from './useRef/SimpleUseRef'
+import LastValue from './useRef/LastValue'
+import GrandParent from './ContextAPI/GrandParent'
+import FamilyContext from './ContextAPI/FamilyContext'
+import Child from './ContextAPI/Child'
+import { SeparateProvider } from './ContextAPI/SeparateContext'
+import Parent from './ContextAPI/Parent'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -77,7 +84,24 @@ function App() {
         {/* <SimpleExample/> */}
         {/* <ParentEffect/> */}
         {/* <MountUnmount/> */}
-        <InterviewQue/>
+        {/* <InterviewQue/> */}
+
+        {/* useRef  */}
+        {/* <SimpleUseRef/> */}
+        {/* <LastValue/> */}
+
+        {/* context  */}
+        {/* <GrandParent/> */}
+
+        {/* <FamilyContext.Provider value="sheetal"> */}
+        <FamilyContext.Provider value={{name:"sheetal", id:100}}>
+          <Child/>
+        </FamilyContext.Provider>
+
+        <SeparateProvider>
+          <Parent/>
+        </SeparateProvider>
+
     </>
   )
 }
