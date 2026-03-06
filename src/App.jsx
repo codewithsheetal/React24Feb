@@ -37,6 +37,8 @@ import FamilyContext from './ContextAPI/FamilyContext'
 import Child from './ContextAPI/Child'
 import { SeparateProvider } from './ContextAPI/SeparateContext'
 import Parent from './ContextAPI/Parent'
+import Hookused from './custom hook/Hookused'
+import CounteruseHook from './custom hook/Counter/CounteruseHook'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -94,14 +96,17 @@ function App() {
         {/* <GrandParent/> */}
 
         {/* <FamilyContext.Provider value="sheetal"> */}
-        <FamilyContext.Provider value={{name:"sheetal", id:100}}>
+        {/* <FamilyContext.Provider value={{name:"sheetal", id:100}}>
           <Child/>
         </FamilyContext.Provider>
 
         <SeparateProvider>
           <Parent/>
-        </SeparateProvider>
+        </SeparateProvider> */}
 
+        
+          {/* <Hookused/> */}
+          <CounteruseHook/>
     </>
   )
 }
