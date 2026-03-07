@@ -39,6 +39,11 @@ import { SeparateProvider } from './ContextAPI/SeparateContext'
 import Parent from './ContextAPI/Parent'
 import Hookused from './custom hook/Hookused'
 import CounteruseHook from './custom hook/Counter/CounteruseHook'
+import LoaderError from './Loader and Error/LoaderError'
+import Getdataloader from './Loader and Error/custom hook and loader/Getdataloader'
+import GetProduct from './display data from js/GetProduct'
+import ParentMemo from './ReactMemo/ParentMemo'
+import ParentCallBack from './useCallback/ParentCallBack'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -106,7 +111,18 @@ function App() {
 
         
           {/* <Hookused/> */}
-          <CounteruseHook/>
+          {/* <CounteruseHook/> */}
+
+          {/* <LoaderError/> */}
+          {/* <Getdataloader/> */}
+
+          {/* <GetProduct/> */}
+
+          {/* React Memo  */}
+
+          {/* <ParentMemo/> */}
+
+          <ParentCallBack/>
     </>
   )
 }
