@@ -44,6 +44,8 @@ import Getdataloader from './Loader and Error/custom hook and loader/Getdataload
 import GetProduct from './display data from js/GetProduct'
 import ParentMemo from './ReactMemo/ParentMemo'
 import ParentCallBack from './useCallback/ParentCallBack'
+import ParentuseMemo from './useMemo/ParentuseMemo'
+import ExpensiveCal from './useMemo/ExpensiveCal'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -122,7 +124,10 @@ function App() {
 
           {/* <ParentMemo/> */}
 
-          <ParentCallBack/>
+          {/* <ParentCallBack/> */}
+
+          {/* <ParentuseMemo/> */}
+          <ExpensiveCal/>
     </>
   )
 }
