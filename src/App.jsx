@@ -46,6 +46,10 @@ import ParentMemo from './ReactMemo/ParentMemo'
 import ParentCallBack from './useCallback/ParentCallBack'
 import ParentuseMemo from './useMemo/ParentuseMemo'
 import ExpensiveCal from './useMemo/ExpensiveCal'
+import GetAPIdata from './API/GetAPIdata'
+import PostAPI from './API/PostAPI'
+import EditAPI from './API/EditAPI'
+import CounterUI from './ReduxToolKit/CounterUI'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -81,29 +85,29 @@ function App() {
       {/* <Radio/> */}
       {/* <Dropdown/> */}
 
-        {/* <RoutingExample/> */}
-        {/* <ButtonClick/> */}
-        {/* <LazyLoading/> */}
+      {/* <RoutingExample/> */}
+      {/* <ButtonClick/> */}
+      {/* <LazyLoading/> */}
 
-        {/* useReducer */}
-        {/* <FormDataReducer/> */}
+      {/* useReducer */}
+      {/* <FormDataReducer/> */}
 
-        {/* <UIforCounterReducer/> */}
+      {/* <UIforCounterReducer/> */}
 
-        {/* <SimpleExample/> */}
-        {/* <ParentEffect/> */}
-        {/* <MountUnmount/> */}
-        {/* <InterviewQue/> */}
+      {/* <SimpleExample/> */}
+      {/* <ParentEffect/> */}
+      {/* <MountUnmount/> */}
+      {/* <InterviewQue/> */}
 
-        {/* useRef  */}
-        {/* <SimpleUseRef/> */}
-        {/* <LastValue/> */}
+      {/* useRef  */}
+      {/* <SimpleUseRef/> */}
+      {/* <LastValue/> */}
 
-        {/* context  */}
-        {/* <GrandParent/> */}
+      {/* context  */}
+      {/* <GrandParent/> */}
 
-        {/* <FamilyContext.Provider value="sheetal"> */}
-        {/* <FamilyContext.Provider value={{name:"sheetal", id:100}}>
+      {/* <FamilyContext.Provider value="sheetal"> */}
+      {/* <FamilyContext.Provider value={{name:"sheetal", id:100}}>
           <Child/>
         </FamilyContext.Provider>
 
@@ -111,23 +115,32 @@ function App() {
           <Parent/>
         </SeparateProvider> */}
 
-        
-          {/* <Hookused/> */}
-          {/* <CounteruseHook/> */}
 
-          {/* <LoaderError/> */}
-          {/* <Getdataloader/> */}
+      {/* <Hookused/> */}
+      {/* <CounteruseHook/> */}
 
-          {/* <GetProduct/> */}
+      {/* <LoaderError/> */}
+      {/* <Getdataloader/> */}
 
-          {/* React Memo  */}
+      {/* <GetProduct/> */}
 
-          {/* <ParentMemo/> */}
+      {/* React Memo  */}
 
-          {/* <ParentCallBack/> */}
+      {/* <ParentMemo/> */}
 
-          {/* <ParentuseMemo/> */}
-          <ExpensiveCal/>
+      {/* <ParentCallBack/> */}
+
+      {/* <ParentuseMemo/> */}
+      {/* <ExpensiveCal/>
+           */}
+
+      {/* <GetAPIdata/> */}
+
+      {/* <PostAPI/> */}
+      {/* <EditAPI/> */}
+
+      <CounterUI />
+
     </>
   )
 }
